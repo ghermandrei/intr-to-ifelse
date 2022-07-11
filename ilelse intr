@@ -1,0 +1,30 @@
+current_year = 2022
+limit_year =1900
+year_of_birth = int
+
+
+print("Is your year of birth between 1900-2022  ",("( yes/no ) "))
+year_of_birth_conf = input()
+if year_of_birth_conf == "yes":
+  your_year_of_birth = int(input ("what is your year of birth? "))
+
+if  your_year_of_birth >= limit_year and your_year_of_birth <= current_year:
+ print("you are",current_year - your_year_of_birth,"years old",)
+else :
+    quit()
+
+
+age = current_year-your_year_of_birth
+
+if age > 1 and age < 3:
+    print ('baby')
+elif age > 4 and age < 9:
+    print ("kid")
+elif age > 10 and age < 15:
+    print ('teen')
+elif age > 16 and age < 18:
+    print("young")
+elif age > 19 and age < 50:
+    print ('adult')
+else:
+ print('old')
