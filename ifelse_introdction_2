@@ -1,0 +1,35 @@
+
+from site import ENABLE_USER_SITE
+
+
+current_year = 2022
+start_year = 1900
+
+from random import  randint
+
+#year_of_born = int(input("What year did you born ? - " ))
+
+
+#if year_of_born < start_year:
+   #print ('error') 
+   #pass
+#age = current_year - year_of_born   
+#print ("you are",age,"years old")
+n = 1
+while n<= 50:
+  age=randint(3,76)
+  print("-the age",age,"\nis:")
+  
+  if age >=1 and age <3:
+   print (" defined as a BABY")
+  elif age >=4 and age < 9:
+    print(' defined as a KID')
+  elif age >=10 and age < 15:
+    print(' defined as a TEEN')
+  elif age >=16 and age <18: 
+    print(' defined as a YOUNG')
+  elif age >=19 and age < 50 :
+    print (' defined as an ADULT')  
+  else:
+    print("defined as an  OLD")
+  n += 1
