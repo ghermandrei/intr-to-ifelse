@@ -1,5 +1,4 @@
 
-from site import ENABLE_USER_SITE
 
 
 current_year = 2022
